@@ -1,0 +1,146 @@
+{
+    "grass": {
+        "found_near": ["tree", "water", "path"],
+        "not_associated_with": ["diamond", "coal", "iron"],
+        "walkable": true,
+        "uses": ["collect_sapling", "eat_plant"]
+    },
+    "coal": {
+        "found_near": ["stone", "iron", "diamond"],
+        "not_associated_with": ["grass", "cow", "skeleton"],
+        "walkable": false,
+        "transforms_to": "path",
+        "uses": ["make_iron_pickaxe", "make_iron_sword", "collect_coal"],
+        "collected_by": ["wood_pickaxe"]
+    },
+    "cow": {
+        "found_near": ["grass", "tree", "water"],
+        "not_associated_with": ["coal", "diamond", "iron"],
+        "appears_more_during": "daytime",
+        "walkable": false,
+        "transforms_to": "grass",
+        "uses": ["eat_cow"]
+    },
+    "diamond": {
+        "found_near": ["stone", "iron", "coal"],
+        "not_associated_with": ["grass", "cow", "tree"],
+        "walkable": false,
+        "transforms_to": "path",
+        "uses": ["collect_diamond"],
+        "collected_by": ["iron_pickaxe"]
+    },
+    "iron": {
+        "found_near": ["coal", "diamond", "stone"],
+        "not_associated_with": ["grass", "cow", "skeleton"],
+        "walkable": false,
+        "transforms_to": "path",
+        "uses": ["make_iron_pickaxe", "make_iron_sword", "collect_iron"],
+        "collected_by": ["stone_pickaxe"]
+    },
+    "lava": {
+        "found_near": ["stone", "water", "sand"],
+        "not_associated_with": ["cow", "tree", "zombie"],
+        "walkable": false
+    },
+    "skeleton": {
+        "found_near": ["zombie", "lava", "grass"],
+        "not_associated_with": ["cow", "grass", "coal"],
+        "appears_more_during": "nighttime",
+        "walkable": false,
+        "transforms_to": "path",
+        "uses": ["defeat_skeleton"]
+    },
+    "stone": {
+        "found_near": ["iron", "coal", "diamond"],
+        "not_associated_with": ["cow", "zombie", "skeleton"],
+        "walkable": false,
+        "transforms_to": "path",
+        "placeable_after": "place_stone",
+        "uses": ["make_stone_pickaxe", "make_stone_sword", "place_furnace", "place_stone", "collect_stone", "eat_plant", "sleep"],
+        "collected_by": ["wood_pickaxe"]
+    },
+    "tree": {
+        "found_near": ["grass", "path", "water"],
+        "not_associated_with": ["coal", "cow", "diamond"],
+        "walkable": false,
+        "uses": ["make_iron_pickaxe", "make_iron_sword", "make_stone_pickaxe", "make_stone_sword", "make_wood_pickaxe", "make_wood_sword", "place_table", "collect_wood"]
+    },
+    "water": {
+        "found_near": ["sand", "grass", "tree"],
+        "not_associated_with": ["coal", "diamond", "iron"],
+        "walkable": false,
+        "uses": ["collect_drink"]
+    },
+    "zombie": {
+        "found_near": ["skeleton", "grass", "cow"],
+        "not_associated_with": ["coal", "diamond", "iron"],
+        "appears_more_during": "nighttime",
+        "walkable": false,
+        "transforms_to": "grass",
+        "uses": ["defeat_zombie"]
+    },
+    "plant": {
+        "found_near": ["grass", "tree", "water"],
+        "not_associated_with": ["coal", "diamond", "iron"],
+        "walkable": false,
+        "transforms_to": "plant",
+        "placeable_after": "place_plant"
+    },
+    "path": {
+        "found_near": ["grass", "tree", "water"],
+        "not_associated_with": ["zombie", "coal", "cow"],
+        "walkable": true,
+        "uses": ["sleep"]
+    },
+    "sand": {
+        "found_near": ["water", "grass", "path"],
+        "not_associated_with": ["coal", "diamond", "lava"],
+        "walkable": true
+    },
+    "plant-ripe": {
+        "found_near": ["grass", "water", "stone"],
+        "not_associated_with": ["coal", "cow", "diamond"],
+        "walkable": false,
+        "uses": ["eat_plant"]
+    },
+    "table": {
+        "requires": {"wood": 2}
+    },
+    "furnace": {
+        "requires_nearby": ["table"],
+        "requires": {"stone": 4}
+    },
+    "sapling": {
+        "walkable": false,
+        "uses": ["place_plant"],
+        "collected_by": ["wood_sword", "wood_pickaxe"]
+    },
+    "wood_pickaxe": {
+        "requires_nearby": ["table"],
+        "requires": {"wood": 1}
+    },
+    "stone_pickaxe": {
+        "requires_nearby": ["table"],
+        "requires": {"wood": 1, "stone": 1}
+    },
+    "iron_pickaxe": {
+        "requires_nearby": ["furnace", "table"],
+        "requires": {"iron": 1, "coal": 1, "wood": 1}
+    },
+    "wood_sword": {
+        "requires_nearby": ["table"],
+        "requires": {"wood": 1}
+    },
+    "stone_sword": {
+        "requires_nearby": ["table"],
+        "requires": {"wood": 1, "stone": 1}
+    },
+    "iron_sword": {
+        "requires_nearby": ["furnace", "table"],
+        "requires": {"iron": 1, "coal": 1, "wood": 1}
+    },
+    "sleep": {
+        "requires_nearby": ["path", "stone"],
+        "requires": ["stone_sword"]
+    }
+}

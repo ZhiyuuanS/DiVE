@@ -1,0 +1,200 @@
+{
+    "collect_coal": {
+        "General Plan": {
+            "step_1": "Ensure you are facing 'coal'. Adjust direction if needed.",
+            "step_2": "Ensure 'coal' is within immediate distance. Move closer if required.",
+            "step_3": "Execute the collect_coal action to gather the coal."
+        },
+        "termination_condition": "Inventory's coal amount increases by 1, or the food, drink, or energy levels are critically low, or there are immediate threats such as zombies or skeletons."
+    },
+    "collect_diamond": {
+        "General Plan": {
+            "step_1": "Identify the direction of the nearest diamond, ensuring it is within immediate distance.",
+            "step_2": "Navigate towards the diamond while clearing any obstacles and facing the diamond when within immediate distance.",
+            "step_3": "Execute the collect_diamond action while facing the diamond."
+        },
+        "termination_condition": "The diamond is collected and the inventory reflects an increased amount of diamonds, or if health, food, drink, or energy levels are critically low, or if nearby threats like zombies or skeletons are present."
+    },
+    "collect_water": {
+        "General Plan": {
+            "step_1": "Navigate toward a location where 'water' is within immediate distance. Use movement actions such as 'move_up', 'move_down', 'move_left', 'move_right' as required.",
+            "step_2": "Ensure the character is facing 'water'. Use facing actions if necessary, such as turning left or right.",
+            "step_3": "Execute the 'collect_water' action multiple times to increase the 'drink' status in the inventory."
+        },
+        "termination_condition": "The drink level in the status reaches an acceptable level (near full), or the character's health, food, or energy levels are critical, or there are immediate dangers such as zombies nearby."
+    },
+    "collect_iron": {
+        "General Plan": {
+            "step_1": "Identify the nearest or most accessible 'iron' node within the environment.",
+            "step_2": "Move towards the identified 'iron' node, ensuring its distance is within 'immediate' range.",
+            "step_3": "Face the 'iron' node directly to fulfill the action requirement for collect_iron.",
+            "step_4": "Execute the 'collect_iron' action to successfully collect the 'iron' node."
+        },
+        "termination_condition": "The inventory's 'iron' amount increased by 1, or the food, drink, or energy levels are low, or there are zombies or skeletons nearby."
+    },
+    "collect_sapling": {
+        "General Plan": {
+            "step_1": "Identify and navigate towards an area with grass, ensuring it is within immediate distance.",
+            "step_2": "Face the grass to fulfill the action requirement.",
+            "step_3": "Make sure you have empty slots in the inventory by discarding any non-essential items.",
+            "step_4": "Execute the collect_sapling action."
+        },
+        "termination_condition": "The inventory's sapling amount increased by 1, or the food, drink, or energy levels are critically low, or there are dangerous entities like zombies or skeletons nearby."
+    },
+    "collect_stone": {
+        "General Plan": {
+            "step_1": "Locate a stone block within the immediate distance by navigating the environment.",
+            "step_2": "Face the stone block to fulfill the precondition for the collect_stone action.",
+            "step_3": "Once the stone block is within the immediate distance and the agent is facing it, execute the collect_stone action."
+        },
+        "termination_condition": "The inventory's stone amount increases by 1, or the food, drink, or energy levels are low, or there are zombies or skeletons nearby."
+    },
+    "collect_wood": {
+        "General Plan": {
+            "step_1": "Locate a tree, ensuring 'tree' is within immediate distance.",
+            "step_2": "Move closer to the tree if it's not within immediate distance. This may involve navigating around obstacles such as grass, stone, or paths.",
+            "step_3": "Face the tree to meet the precondition of the action.",
+            "step_4": "Execute the 'collect_wood' action to gather wood from the tree."
+        },
+        "termination_condition": "The inventory's wood amount increases by 1, or if health, food, drink, or energy levels drop critically low, or a threat (such as skeletons or zombies) is detected nearby."
+    },
+    "defeat_skeleton": {
+        "General Plan": {
+            "step_1": "Locate a skeleton by navigating the environment. Ensure 'skeleton' is within immediate distance.",
+            "step_2": "Face the skeleton to meet the precondition of the action.",
+            "step_3": "Ensure your inventory does not contain any items listed in the precondition constraints.",
+            "step_4": "If faced with skeleton and within immediate distance, execute the 'defeat_skeleton' action."
+        },
+        "termination_condition": "The facing object changes to 'path' or if the player's health, food, or drink levels are critically low, indicating player needs to recover."
+    },
+    "defeat_zombie": {
+        "General Plan": {
+            "step_1": "Navigate the environment to locate zombies, considering they can spawn on grass or path surfaces.",
+            "step_2": "Move towards a zombie by taking paths such as moving_left, moving_right, moving_up, or moving_down based on the terrain and obstacles.",
+            "step_3": "Ensure you have a weapon like a sword in your inventory to fulfill the requirement for defeating a zombie.",
+            "step_4": "Position within immediate distance of the zombie to engage.",
+            "step_5": "Face the zombie to fulfill the action requirement for defeat_zombie.",
+            "step_6": "Execute the defeat_zombie action to successfully eliminate the zombie."
+        },
+        "termination_condition": "The current state indicates there are no zombies within immediate or nearby distance."
+    },
+    "eat_cow": {
+        "General Plan": {
+            "step_1": "Navigate towards the closest cow, ensuring it is within immediate distance.",
+            "step_2": "Face the cow to fulfill the precondition for the eat_cow action.",
+            "step_3": "Execute the eat_cow action."
+        },
+        "termination_condition": "The inventory's food status increases, or the food, drink, or energy levels are low, or there are zombies or skeletons nearby."
+    },
+    "eat_plant": {
+        "General Plan": {
+            "step_1": "Identify the nearest ripe plant (plant-ripe) and its distance from the current position.",
+            "step_2": "Check that there are grass, stone, and plant-ripe within immediate distance, and that the inventory is empty.",
+            "step_3": "Move to a position within immediate distance of the plant-ripe while ensuring grass and stone are also within immediate distance.",
+            "step_4": "Face the plant-ripe to fulfill the requirement for the action.",
+            "step_5": "Execute the eat_plant action to consume the plant-ripe."
+        },
+        "termination_condition": "The facing object is changed to 'plant,' and the inventory and status reflect an increase in food, or if there is an immediate threat such as a zombie or skeleton nearby."
+    },
+    "make_iron_pickaxe": {
+        "General Plan": {
+            "step_1": "Ensure the inventory contains 1 wood, 1 coal, and 1 iron, and the inventory is accessible.",
+            "step_2": "Walk to the nearest table and furnace, both of which must be within immediate distance.",
+            "step_3": "Ensure the character is facing either 'grass', 'path', 'furnace', or 'stone'. If facing the incorrect object, turn to face one of the acceptable objects.",
+            "step_4": "Execute the make_iron_pickaxe action to craft the iron pickaxe."
+        },
+        "termination_condition": "The inventory's iron_pickaxe amount increased by 1, or the food, drink, or energy levels are low, or there are zombies or skeletons nearby."
+    },
+    "make_iron_sword": {
+        "General Plan": {
+            "step_1": "Ensure you have the required resources in your inventory: coal (1), iron (1), and wood (1).",
+            "step_2": "Locate and position yourself within immediate distance of a furnace and a table.",
+            "step_3": "Face one of the following objects: grass, path, furnace, or stone.",
+            "step_4": "Execute the make_iron_sword action."
+        },
+        "termination_condition": "The inventory's iron_sword amount increased by 1, or the food, drink, or energy levels are low, or there are zombies or skeletons nearby."
+    },
+    "make_stone_pickaxe": {
+        "General Plan": {
+            "step_1": "Ensure you have the required items in the inventory: 1 wood, 1 stone, and an empty slot.",
+            "step_2": "Move to a location facing 'grass', 'furnace', or 'table' and ensure the table is within immediate distance.",
+            "step_3": "If a table is not present, place a table from the inventory.",
+            "step_4": "Execute the 'make_stone_pickaxe' action while facing 'grass', 'furnace', or 'table'."
+        },
+        "termination_condition": "The inventory's 'stone_pickaxe' amount has increased by 1, or any critical resource levels (food, drink, energy) are low, or there are threats (e.g., zombies or skeletons) nearby."
+    },
+    "make_stone_sword": {
+        "General Plan": {
+            "step_1": "Make sure the inventory has at least 1 wood and 1 stone, and has an empty slot.",
+            "step_2": "Locate and navigate towards a table; ensure the table is within immediate distance.",
+            "step_3": "Face one of the following objects: grass, furnace, or table.",
+            "step_4": "Execute the make_stone_sword action."
+        },
+        "termination_condition": "The inventory shows 1 more stone_sword, or if health, food, drink, or energy levels are dangerously low, or if there are zombies or skeletons nearby."
+    },
+    "make_wood_pickaxe": {
+        "General Plan": {
+            "step_1": "Navigate the environment to locate a grassy area, as grass is a required facing object.",
+            "step_2": "Ensure a table and a patch of grass are within immediate distance from each other.",
+            "step_3": "Collect wood until at least one piece is in the inventory.",
+            "step_4": "Check that the inventory slot for the resultant object is empty. If not, clear an inventory slot.",
+            "step_5": "Face either grass, path, or table to fulfill the action requirement for making a wood pickaxe.",
+            "step_6": "Execute the make_wood_pickaxe action."
+        },
+        "termination_condition": "A wood_pickaxe is added to the inventory, or the food, drink, or energy levels are low, or there are zombies or skeletons nearby."
+    },
+    "make_wood_sword": {
+        "General Plan": {
+            "step_1": "Make sure the inventory has 'wood' and is free of specific unnecessary items (e.g., 'None').",
+            "step_2": "Navigate towards an area with 'grass' and a 'table' within immediate distance.",
+            "step_3": "Face either 'grass' or 'table' in the immediate area.",
+            "step_4": "Execute the make_wood_sword action."
+        },
+        "termination_condition": "The inventory has a 'wood_sword', the food, drink, or energy levels are low, or there are zombies or other potential threats nearby."
+    },
+    "place_furnace": {
+        "General Plan": {
+            "step_1": "Move to a place where you face either grass or a path.",
+            "step_2": "Ensure that there is grass and a table within immediate distance; if not, place the table if you have one in your inventory.",
+            "step_3": "Check if you have at least 4 stones in your inventory.",
+            "step_4": "Execute the place_furnace action when the above conditions are met."
+        },
+        "termination_condition": "A furnace is placed and visible in the observation, or the food, drink, or energy levels are low, or there are zombies or other threats nearby."
+    },
+    "place_plant": {
+        "General Plan": {
+            "step_1": "Ensure that the player is facing either grass or path. If not, navigate to face grass or path.",
+            "step_2": "Verify the inventory has at least one sapling. If not, gather sapling by mining or collecting nearby resources until a sapling is acquired.",
+            "step_3": "Stand within immediate distance of the target placement location (grass or path).",
+            "step_4": "Execute the place_plant action to plant the sapling."
+        },
+        "termination_condition": "The facing object changes to 'plant', or the food, drink, or energy levels are low, or there are hostile entities like zombies or skeletons nearby."
+    },
+    "place_stone": {
+        "General Plan": {
+            "step_1": "Ensure you have at least one stone in your inventory. Gather stone blocks if needed.",
+            "step_2": "Navigate the environment to face one of the suitable surfaces ['water', 'grass', 'path', 'stone', 'lava'] for placing a stone.",
+            "step_3": "Move within immediate distance of the suitable surface.",
+            "step_4": "Face the suitable surface directly.",
+            "step_5": "Execute the place_stone action."
+        },
+        "termination_condition": "The facing object changes to 'stone', or if the food, drink, or energy levels are low, or there are any hostile entities (e.g., zombies) nearby."
+    },
+    "place_table": {
+        "General Plan": {
+            "step_1": "Navigate to an area where there is grass or path in the immediate vicinity.",
+            "step_2": "Ensure that the inventory contains at least 2 units of wood.",
+            "step_3": "Face the object 'grass' or 'path' to fulfill the action's precondition.",
+            "step_4": "Execute the place_table action, transforming the faced object into a 'table'."
+        },
+        "termination_condition": "A 'table' is visible in the environment facing area, the inventory wood count decreases by 2, or the food, drink, or energy levels are low, or there are hostile entities like zombies or skeletons nearby."
+    },
+    "sleep": {
+        "General Plan": {
+            "step_1": "Ensure the character is facing a furnace or stone.",
+            "step_2": "Verify that there is a path and stone within immediate distance.",
+            "step_3": "Execute the sleep action."
+        },
+        "termination_condition": "The facing object changes to 'None', indicating success, or the character is in immediate danger (e.g., low health, nearby enemies)."
+    }
+}

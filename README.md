@@ -1,6 +1,5 @@
 # Enhancing Agent Learning through World Dynamics Modeling
 
-## Overview
 This repo contains code for our paper: [Enhancing Agent Learning through World Dynamics Modeling](https://arxiv.org/abs/2407.17695) 
 
 ## Abstract
@@ -9,3 +8,48 @@ Large language models (LLMs) have been increasingly applied to tasks in language
 <p align="center">
   <img width="800" src="assets/main_figure.png">
 </p>
+
+## Running the Code
+Follow the steps below to set up and run the code.
+### 1. Install Dependencies
+ Use pip to install the required packages:
+
+> ```python
+> pip install -r requirements.txt
+> ```
+
+### 2. Configure OpenAI API Key
+To use OpenAI's services, you need to provide your API key.
+1. Open the LLM/__init__.py file.
+2. Add the following line, replacing "your-api-key-here" with your actual OpenAI API key:
+
+> ```python
+> OPENAI_API_KEY = "your-api-key-here"
+> ```
+
+### 3. Navigate to the LLM Directory
+
+> ```python
+> cd LLM
+> ```
+
+### 4.Run the Script
+Execute the following command to start the program:
+
+> ```python
+> python act/act.py
+> ```
+
+### Citation
+If you use this work in your research, please cite:
+```bibtex
+@inproceedings{sun2024enhancing,
+  author    = {Zhiyuan Sun and Haochen Shi and Marc-Alexandre Côté and Glen Berseth and Xingdi Yuan and Bang Liu},
+  title     = {Enhancing Agent Learning through World Dynamics Modeling},
+  booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2024},
+  pages     = {3534--3568},
+  year      = {2024},
+  location  = {Miami, Florida, USA},
+  publisher = {Association for Computational Linguistics}
+}
+```

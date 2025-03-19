@@ -1,0 +1,252 @@
+{
+    "collect_stone": {
+        "action_name": "collect_stone",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'stone': 1}]",
+        "pre_condition": "You only need to have the following objects: [\"one of the following objects: {'wood_pickaxe': 1, 'stone_pickaxe': 1}\"]",
+        "outcome": "inventory: {'stone': 1}, facing: 'path' ",
+        "leaves": "The surface that remains after the action is: [['path']]",
+        "face": "You need to face the object: [['stone']]",
+        "world_dynamics_id": 0,
+        "subtask_id": 0
+    },
+    "idle": {
+        "action_name": "idle",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "The outcome of this action is: {}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: None",
+        "world_dynamics_id": 1,
+        "subtask_id": 1
+    },
+    "collect_drink": {
+        "action_name": "collect_drink",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'water': 1}]",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "inventory: {'drink': 1}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['water']]",
+        "world_dynamics_id": 2,
+        "subtask_id": 2
+    },
+    "place_plant": {
+        "action_name": "place_plant",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'grass': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'sapling': 1}]",
+        "outcome": "facing: 'plant' ",
+        "leaves": "The surface that remains after the action is: [['plant']]",
+        "face": "You need to face the object: [['grass']]",
+        "world_dynamics_id": 3,
+        "subtask_id": 3
+    },
+    "collect_coal": {
+        "action_name": "collect_coal",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'coal': 1}]",
+        "pre_condition": "You only need to have the following objects: [\"one of the following objects: {'wood_pickaxe': 1, 'stone_pickaxe': 1}\"]",
+        "outcome": "inventory: {'coal': 1}, facing: 'path' ",
+        "leaves": "The surface that remains after the action is: [['path']]",
+        "face": "You need to face the object: [['coal']]",
+        "world_dynamics_id": 4,
+        "subtask_id": 4
+    },
+    "collect_wood": {
+        "action_name": "collect_wood",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'tree': 1}]",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "inventory: {'wood': 1}, facing: 'grass' ",
+        "leaves": "The surface that remains after the action is: [['grass']]",
+        "face": "You need to face the object: [['tree']]",
+        "world_dynamics_id": 5,
+        "subtask_id": 5
+    },
+    "make_stone_pickaxe": {
+        "action_name": "make_stone_pickaxe",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'table': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'wood': 1}, {'stone': 2}]",
+        "outcome": "inventory: {'stone_pickaxe': 1}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['table']]",
+        "world_dynamics_id": 6,
+        "subtask_id": 6
+    },
+    "make_stone_sword": {
+        "action_name": "make_stone_sword",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'table': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'wood': 1}, {'stone': 2}]",
+        "outcome": "inventory: {'stone_sword': 1}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['table']]",
+        "world_dynamics_id": 7,
+        "subtask_id": 7
+    },
+    "collect_sapling": {
+        "action_name": "collect_sapling",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'grass': 1}]",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "inventory: {'sapling': 1}",
+        "leaves": "The surface that remains after the action is: [['grass']]",
+        "face": "You need to face the object: [['grass']]",
+        "world_dynamics_id": 8,
+        "subtask_id": 8
+    },
+    "place_table": {
+        "action_name": "place_table",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: ['2 wood']",
+        "outcome": "facing: 'table' ",
+        "leaves": "The surface that remains after the action is: [['table']]",
+        "face": "You need to face the object: [['grass', 'path']]",
+        "world_dynamics_id": 9,
+        "subtask_id": 9
+    },
+    "make_wood_sword": {
+        "action_name": "make_wood_sword",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'table': 1}]",
+        "pre_condition": "You needsubtasks to have the following objects: [{'wood': 1}]",
+        "outcome": "inventory: {'wood_sword': 1}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: None",
+        "world_dynamics_id": 11,
+        "subtask_id": 11
+    },
+    "make_wood_pickaxe": {
+        "action_name": "make_wood_pickaxe",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'table': 1}]",
+        "pre_condition": "You needsubtasks to have the following objects: [{'wood': 1}]",
+        "outcome": "inventory: {'wood_pickaxe': 1}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: None",
+        "world_dynamics_id": 25,
+        "subtask_id": 25
+    },
+    "eat_cow": {
+        "action_name": "eat_cow",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'cow': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'wood_sword': 1}]",
+        "outcome": "inventory: {'food': 6}",
+        "leaves": "The surface that remains after the action is: [['grass', 'path']]",
+        "face": "You need to face the object: [['cow']]",
+        "world_dynamics_id": 12,
+        "subtask_id": 12
+    },
+    "defeat_zombie": {
+        "action_name": "defeat_zombie",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'zombie': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'wood_sword': 1}]",
+        "outcome": "None",
+        "leaves": "The surface that remains after the action is: [['grass', 'path']]",
+        "face": "You need to face the object: [['zombie']]",
+        "world_dynamics_id": 13,
+        "subtask_id": 13
+    },
+    "sleep": {
+        "action_name": "sleep",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "inventory: {'energy': 9}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: None",
+        "world_dynamics_id": 14,
+        "subtask_id": 14
+    },
+    "collect_iron": {
+        "action_name": "collect_iron",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'iron': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'stone_pickaxe': 1}]",
+        "outcome": "inventory: {'iron': 1}",
+        "leaves": "The surface that remains after the action is: [['path']]",
+        "face": "You need to face the object: [['iron']]",
+        "world_dynamics_id": 15,
+        "subtask_id": 15
+    },
+    "place_furnace": {
+        "action_name": "place_furnace",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: [{'stone': 4}]",
+        "outcome": "facing: 'furnace' ",
+        "leaves": "The surface that remains after the action is: [['path']]",
+        "face": "You need to face the object: [['path', 'grass']]",
+        "world_dynamics_id": 16,
+        "subtask_id": 16
+    },
+    "place_stone": {
+        "action_name": "place_stone",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: [{'stone': 1}]",
+        "outcome": "facing: 'stone' ",
+        "leaves": "The surface that remains after the action is: [['stone']]",
+        "face": "You need to face the object: [[['grass', 'path']]]",
+        "world_dynamics_id": 17,
+        "subtask_id": 17
+    },
+    "defeat_skeleton": {
+        "action_name": "defeat_skeleton",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'skeleton': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'wood_sword': 1}]",
+        "outcome": "None",
+        "leaves": "The surface that remains after the action is: [['grass', 'path']]",
+        "face": "You need to face the object: [['skeleton']]",
+        "world_dynamics_id": 18,
+        "subtask_id": 18
+    },
+    "collect_diamond": {
+        "action_name": "collect_diamond",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'diamond': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'iron_pickaxe': 1}]",
+        "outcome": "inventory: {'diamond': 1}",
+        "leaves": "The surface that remains after the action is: [['path']]",
+        "face": "You need to face the object: [['diamond']]",
+        "world_dynamics_id": 19,
+        "subtask_id": 19
+    },
+    "move_north": {
+        "action_name": "move_north",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "move north 1 block",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['grass', 'path']]",
+        "world_dynamics_id": 20,
+        "subtask_id": 20
+    },
+    "move_south": {
+        "action_name": "move_south",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "move south 1 block",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['grass', 'path']]",
+        "world_dynamics_id": 21,
+        "subtask_id": 21
+    },
+    "move_west": {
+        "action_name": "move_west",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "move west 1 block",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['grass', 'path']]",
+        "world_dynamics_id": 22,
+        "subtask_id": 22
+    },
+    "move_east": {
+        "action_name": "move_east",
+        "nearby": "You need to be within a 1-block distance of the objects: []",
+        "pre_condition": "You only need to have the following objects: None",
+        "outcome": "move east 1 block",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['grass', 'path']]",
+        "world_dynamics_id": 23,
+        "subtask_id": 23
+    },
+    "make_iron_pickaxe": {
+        "action_name": "make_iron_pickaxe",
+        "nearby": "You need to be within a 1-block distance of the objects: [{'table': 1}, {'furnace': 1}]",
+        "pre_condition": "You only need to have the following objects: [{'wood': 1}, {'coal': 1}, {'iron': 1}]",
+        "outcome": "inventory: {'iron_pickaxe': 1}",
+        "leaves": "The surface that remains after the action is: None",
+        "face": "You need to face the object: [['table']]",
+        "world_dynamics_id": 24,
+        "subtask_id": 24
+    }
+}
